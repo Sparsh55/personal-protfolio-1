@@ -528,6 +528,11 @@ nav .fa-solid {
   margin-left: 12px;
 }
 
+.layer p {
+  font-size: small;
+  font-weight: 400;
+}
+
 /* .seemore a {
   text-decoration: none;
   align-items: center;
