@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/496447023f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span>s</span>parsh</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">My Work</a></li>
+                    <li><a href="#contact">Hire Me !</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closmenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="headertext">
+                <p>Full Stack Developer<span class="mern">(MERN STACK)</span></p>
+                <h1>Hi, This is <span>Sparsh</span><br>Saxena From Agra</h1>
+            </div>
+
+        </div>
+        <!------------------about----------------------------------------------->
+    </div>
+    <div id="about">
+        <div class="container1">
+            <div class="row">
+                <div class="aboutcl1">
+                    <img src="images/prodp.jpg">
+                </div>
+                <div class="aboutcl2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I am a Full Stack Developer passionate about creating interactive and robust end-to-end
+                        applications and websites. I am a quick learner and always willing to learn and explore new
+                        technologies & opportunites.</p>
+                    <div class="tabtiltes">
+                        <p class="tblinks active" onclick="opentab('skills')">Skills</p>
+                        <p class="tblinks" onclick="opentab('experience')">Experience</p>
+                        <p class="tblinks" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tabcontents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Laungages</span><br>JAVA CORE, JAVA OOPS, VANILA JS, PYHTON
+                                FUNDAMENTALS</li>
+                            <li><span>Problem Solving</span><br>Data Structure and algo using java </li>
+                            <li><span>FRONT END</span><br>html,css,javascript,React js</li>
+                            <li><span>BACKEND</span><br>Nodes js, Express js </li>
+                            <li><span>DATABASE</span><br> Sql, MongoDB </li>
+                            <li><span>Integration</span><br>Jenkins, CI/CD PIPLINE(using git, jenkins and docker)</li>
+                            <li><span>Automation</span><br>Selenium, jira</li>
+                            <li><span>Cloud</span><br>AWS(EC2,IAM,VPC)</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="experience">
+                        <ul>
+                            <li><span>2016-2017</span><br>Dilpoma Engineer Trainee at VE Commercial Vehclies</li>
+                            <li><span>2018-2021</span><br>Not working due to regular Btech pursuing</li>
+                            <li><span>2022-2023</span><br>SDET internship at Fleek it solutions</li>
+                            <li><span>2023-Current</span><br>Pursuing Full stack Development with Coding Ninjas</li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="education">
+                        <ul>
+                            <li><span>2011</span><br>High School from RadhaBallabh Inter Collage, AGRA</li>
+                            <li><span>2013</span><br>Intermediate from RadhaBallabh Inter Collage, AGRA </li>
+                            <li><span>2013-2016</span><br>Diploma in polytechnic from DAYALBAGH EDUCATIONAL INSTITUTE,
+                                AGRA</li>
+                            <li><span>2018-2021</span><br>Btech(Mech) from Kallinga university, RAIPUR, CHHATISGARH</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------services----------------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-file-code"></i>
+                    <h2>UI/UX Designing</h2>
+                    <p>Creative and responsive user interfaces using Html,css,javascript and React js. Client-focused,
+                        creating user and customer experiences designed to have engaging user interfaces (UI) and
+                        deliver tangible business results</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-server"></i>
+                    <h2>Backend Designing</h2>
+                    <p>Strengthen your app landscape with time-tested back end development solutions using MERN Stack.
+                        Leverage
+                        exceptional skills and experience to build robust, scalable, and
+                        high-performing backend layers tailored to your project and business requirements
+
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>Automation Testing</h2>
+                    <p>Comprehensive test automation services, including design, maintenance of automated UI, API,
+                        performance tests, and strategy development.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!------------------portfolio----------------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-images/imdbclone.PNG" alt="IMDB">
+                    <div class="layer">
+                        <h3>IMDB CLONE</h3>
+                        <p>A simple imdb clone using html,css,javascript</p>
+                        <a href="https://65b34a4076faab00084afc96--heroic-cranachan-0c2c6b.netlify.app/"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="work-images/chatterup.PNG" alt="CHAATTERUP">
+                    <div class="layer">
+                        <h3>CHATTERUP</h3>
+                        <p>Dynamic chatting app using nodejs,socket-io,express,mongodb,html,css,jwt and bcrypt</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+
+
+                </div>
+                <div class="work">
+                    <img src="work-images/easilyapp.PNG" alt="EASLIYAPP">
+                    <div class="layer">
+                        <h3>easilyapp</h3>
+                        <p>Comprehensive job portal website where you can post and apply for jobs using
+                            ejs,nodejs,jwt,express,bcrypt.</p>
+                        <a href="https://easily-mvc.onrender.com/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+
+
+                </div>
+                <div class="work">
+                    <img src="work-images/nikestore.PNG" alt="NIKESTORE">
+                    <div class="layer">
+                        <h3>NIKESTORE</h3>
+                        <p>user-friendly shopping website using html,css,javascript(under production).</p>
+                        <a href="https://superb-moonbeam-8a3734.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+
+
+                </div>
+                <div class="work">
+                    <img src="work-images/loginpage.PNG" alt="LOGINPAGE">
+                    <div class="layer">
+                        <h3>LOGINPAGE</h3>
+                        <p>A simple login page using html,css and javascript for demo purposes</p>
+                        <a href="https://bright-strudel-afdab5.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+
+
+                </div>
+                <div class="work">
+                    <img src="work-images/inventotyapp.PNG" alt="INVENTORRYAPP">
+                    <div class="layer">
+                        <h3>INVENTORRYAPP</h3>
+                        <p>simple ui friendly inventoty web application using ejs,nodejs,express,jwt and bcrypt.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+
+
+                </div>
+                <div class="work">
+                    <img src="work-images/swagger.PNG" alt="postawayapi">
+                    <div class="layer">
+                        <h3>postaway-api</h3>
+                        <p>complete API setup for a social media platform using nodejs, express, moongoose with
+                            mongodb,jwt,bcrypt.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+
+
+                </div>
+                <div class="work">
+                    <img src="work-images/swagger.PNG" alt="ecoomapi">
+                    <div class="layer">
+                        <h3>ecomm-api</h3>
+                        <p>complete API setup for a e-commerse platform using nodejs, express, moongoose with
+                            mongodb,jwt,bcrypt.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+
+
+                </div>
+                <a href="https://github.com/Sparsh55" class="seemore btn">
+                    <div>See more&nbsp<i class="fa-solid fa-arrow-right"></i></div>
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+    <!------------------contact me----------------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Hire Me !</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>sparshsaxena9654@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9068393605</p>
+                    <div class="social-icones">
+                        <a href="https://www.linkedin.com/in/spaarsh-saaxxenaa-23a612210
+                        "><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Sparsh55"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.instagram.com/neverthless6?igsh=MWhsb3V0NmM0cnE4dQ=="><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <a href=""><button class="btn"><i class="fa fa-download"></i> Download CV</button>
+                    </a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <!------------------copyright----------------------------------------------->
+
+        <div class="copyright">
+            <p><i class="fa-solid fa-copyright"></i>&nbsp; Copyright @Sparsh Saxena, 2023 all right reserved</p>
+        </div>
+    </div>
+
+    <script>
+        var Tablinks = document.getElementsByClassName("tblinks");
+        var Tabcontents = document.getElementsByClassName("tabcontents");
+        function opentab(tabname) {
+            for (tablink of Tablinks) {
+                tablink.classList.remove("active");
+            }
+
+            for (tabcontent of Tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active");
+            document.getElementById(tabname).classList.add("active-tab");
+        } 
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closmenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
