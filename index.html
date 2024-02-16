@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <script src="https://kit.fontawesome.com/496447023f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-    <div id="header">
+    <div id="header1">
         <div class="container">
             <nav>
                 <h1><span>s</span>parsh</h1>
@@ -24,6 +25,9 @@
                     <li><a href="#contact">Hire Me !</a></li>
                     <i class="fa-solid fa-xmark" onclick="closmenu()"></i>
                 </ul>
+                <div id="wrapper-mode"><img src="work-images/52-528653_moon-moon-icon-icon.png" alt="moon" id="moon">
+                </div>
+
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="headertext">
@@ -247,7 +251,8 @@
                         <a href="https://www.instagram.com/neverthless6?igsh=MWhsb3V0NmM0cnE4dQ=="><i
                                 class="fa-brands fa-square-instagram"></i></a>
                     </div>
-                    <a href="images/ATS -resume-sparsh.pdf" download ><button class="btn"><i class="fa fa-download"></i> Download CV</button>
+                    <a href="images/ATS -resume-sparsh.pdf" download><button class="btn"><i class="fa fa-download"></i>
+                            Download CV</button>
                     </a>
                 </div>
                 <div class="contact-right">
@@ -291,7 +296,95 @@
         function closmenu() {
             sidemenu.style.right = "-200px";
         }
+
+        var moonicon = document.getElementById("moon");
+        var obj = document.getElementById("header1");
+        var warpper = document.getElementById("wrapper-mode");
+
+
+        warpper.onclick = function () {
+
+            document.body.classList.toggle("dark-theme");
+
+            const width = window.innerWidth;
+
+            if (width < 600) {
+                // Your code here
+
+                if (document.body.classList.contains("dark-theme")) {
+
+                    moonicon.src = "work-images/pngtree-sun-icon-circle-png-image_5277175.jpg";
+                    moonicon.style.boxShadow = "0px 5px 10px black";
+                    Toastify({
+            text: "Light Mode Activated!",
+            duration: 1000,
+            className: "info",
+            position: "center",
+            style: {
+                background: "linear-gradient(to right, #FD2626, #FFED50)"
+            }
+          }).showToast();
+                    obj.style.backgroundImage = "url('images/whitewallpaper.png')";
+                    moonicon.style.width = "22px";
+                    moonicon.style.height = "22px";
+                    moonicon.style.borderRadius = "50%"
+                } else {
+                    moonicon.src = "work-images/52-528653_moon-moon-icon-icon.png";
+                    moonicon.style.boxShadow = "0px 5px 10px white";
+                    Toastify({
+            text: "Dark Mode Activated!",
+            duration: 1000,
+            className: "info",
+            position: "center",
+            style: {
+                background: "linear-gradient(to right, #26FD26, #FFED50)"
+            }
+          }).showToast();
+                    obj.style.backgroundImage = "url('images/phonesize.jpeg')";
+
+                }
+
+            } else {
+
+                if (document.body.classList.contains("dark-theme")) {
+                    moonicon.src = "work-images/pngtree-sun-icon-circle-png-image_5277175.jpg";
+                    moonicon.style.boxShadow = "0px 5px 10px black";
+                    moonicon.style.width = "22px";
+                    moonicon.style.height = "22px";
+                    moonicon.style.borderRadius = "50%"
+                    Toastify({
+            text: "Light Mode Activated!",
+            duration: 1000,
+            className: "info",
+            position: "center",
+            style: {
+                background: "linear-gradient(to right, #FD2626, #FFED50)"
+            }
+          }).showToast();
+                    obj.style.backgroundImage = "url('images/whitewallpaper.png')";
+                } else {
+                    moonicon.src = "work-images/52-528653_moon-moon-icon-icon.png";
+                    moonicon.style.boxShadow = "0px 5px 10px white";
+                    Toastify({
+            text: "Dark Mode Activated!",
+            duration: 1000,
+            className: "info",
+            position: "center",
+            style: {
+                background: "linear-gradient(to right, #26FD26, #FFED50)"
+            }
+          }).showToast();
+                    obj.style.backgroundImage = "url('images/new.jpg')";
+
+                }
+
+            }
+
+
+        }
+
     </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 
 </html>
