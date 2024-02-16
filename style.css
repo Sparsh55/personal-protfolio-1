@@ -414,6 +414,10 @@ nav ul {
 .social-icones {
   margin-top: 30px;
 }
+#gif {
+  height: 170px;
+  width: 300px;
+}
 
 .social-icones a {
   text-decoration: none;
