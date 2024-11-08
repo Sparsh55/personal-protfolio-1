@@ -596,6 +596,59 @@ nav .fa-solid {
   font-weight: 400;
 }
 
+/* new styles starts here for loader */
+
+#wrapp1{
+  position: relative;
+}
+
+#loader{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #f0f0f0;
+  color: black;
+
+}
+#bar {
+  width: 10px;
+  height: 100px;
+  margin: 0 5px;
+  background: linear-gradient(to top, #ff4e50, #f9d423);
+  animation: grow 1.5s infinite ease-in-out;
+}
+
+#bar:nth-child(1) {
+  animation-delay: 0s;
+}
+#bar:nth-child(2) {
+  animation-delay: 0.1s;
+}
+#bar:nth-child(3) {
+  animation-delay: 0.2s;
+}
+#bar:nth-child(4) {
+  animation-delay: 0.3s;
+}
+#bar:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+@keyframes grow {
+  0%, 100% {
+    transform: scaleY(0.5);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+
 /* .seemore a {
   text-decoration: none;
   align-items: center;
