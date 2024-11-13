@@ -181,17 +181,23 @@ nav ul {
   /* -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0, 0, 0, 0.2)); */
 }
 .headertext p {
+  display: inline-block;
   animation: focus-in-contract 4s ease-in-out 0s infinite normal none;
+  height: 50px; /* Set a fixed height */
+  line-height: 50px; /* Match line-height to height */
+  overflow: hidden;
 }
 @keyframes focus-in-contract {
   0% {
     letter-spacing: 1em;
     filter: blur(12px);
     opacity: 0;
+    transform: translateY(0);
   }
   100% {
     filter: blur(0);
     opacity: 1;
+    transform: translateY(0);
   }
 }
 /*.headertext h1::after{
