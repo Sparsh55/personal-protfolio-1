@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "Setting things up...",
     "Almost done...",
   ];
-  const intervals = [0, 5000, 10000];
+  const intervals = [0, 3200, 6400];
 
   intervals.forEach((interval, index) => {
     setTimeout(() => {
