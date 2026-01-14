@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     "Setting things up...",
     "Almost done...",
   ];
-  const intervals = [0, 3200, 6400];
+  const intervals = [0, 1500, 3000];
 
   intervals.forEach((interval, index) => {
     setTimeout(() => {
@@ -18,5 +18,5 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(() => {
     loader.style.display = "none";
     content.style.display = "block";
-  }, 15000); // 15 seconds delay
+  }, 5000); // 15 seconds delay
 });
